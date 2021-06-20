@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for object in objectlist %}
+    <li> <a href='/company/{{ object.slug }}'> {{ object.name }} </a> </li>
+{% endfor %}
+
+
+{% endblock %}
